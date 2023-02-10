@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Home| SG-store</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">	
+	    <link rel="stylesheet" th:href="@{/css/css-general.css}">
+	</head>
+	
+	<body>
+		<header th:replace="fragments/intestazione-general.html :: intestazione"></header>
+		<div th:replace="fragments/intestazione-general.html :: sfondo3"></div>
+	    <div id="riquadri">
+	    	<div class="container">
+				<img src="images/brand.jpg" class="image">
+				<a class="overlay" th:href="@{/listchefs}">Brand</a>
+			</div>
+		<div class="container">
+				<img src="images/prodotti.jpg" class="image">
+				<a class="overlay" th:href="@{/visualizzaListaPiatti}">Scarpe</a>
+			</div>
+	   		
+	    </div>
+	</body>
+</html>
