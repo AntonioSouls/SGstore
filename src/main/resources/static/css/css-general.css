@@ -9,7 +9,7 @@
 
 a {
 	text-decoration: none;
-	color: orangered;
+	color: darkseagreen;
 }
 
 a.linkdiverso {
@@ -25,7 +25,7 @@ nav {
 	width: 100%;
 	height: 10%;
 	top: 0;
-	background-color: darkblue;
+	background-color: indianred;
 	opacity: 1;
 	display: flex;
 	justify-content: center;
@@ -35,7 +35,7 @@ nav {
 	position: center;
 	border-bottom-style: solid;
 	border-bottom-width: 50%;
-	border-bottom-color: orangered;
+	border-bottom-color: darkseagreen;
 }
 
 nav #logo {
@@ -103,8 +103,8 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: orangered;
-	background-color: darkblue;
+	color: darkseagreen;
+	background-color: indianred;
 	opacity: 0.90;
 	border-radius: 5%;
 	padding: 5% 0;
@@ -119,8 +119,8 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: darkred;
-	background-color: darkgoldenrod;
+	color: indianred;
+	background-color: darkseagreen;
 	opacity: 0.90;
 	border-radius: 5%;
 	padding: 3% 0;
@@ -138,8 +138,8 @@ h1.registration{
 	width: 50%;
 	padding-bottom: 5%;
 	font-size: 200%;
-	color: darkblue;
-	background-color: orangered;
+	color: indianred;
+	background-color: darkseagreen;
 	opacity: 0.85;
 	border-radius: 10%;
 	text-align: center;
@@ -151,7 +151,7 @@ h1.registration{
 	padding: 1%;
 	top: 60%;
 	left: 50%;
-	background-color: darkblue;
+	background-color: indianred;
 	border-radius: 10%;
 	font-size: 150%;
 	
@@ -162,7 +162,7 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
 	text-align: center;
 	font-family: cursive;
 	font-style: italic;
-	color: darkred;
+	color: indianred;
 	
 }
 
@@ -178,7 +178,7 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
 	opacity: 1;
 	border-radius: 5%;
 	padding: 5% 0;
-	background-color: orangered;
+	background-color: darkseagreen;
 }
 
 .container {
@@ -204,7 +204,7 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
   width: 80%;
   opacity: 0;
   transition: .5s ease;
-  background-color: darkblue;
+  background-color: indianred;
 }
 
 .container:hover .overlay {
@@ -227,7 +227,7 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
 	opacity: 0.95;
 	border-radius: 5%;
 	padding: 0% 0;
-	background-color: darkgoldenrod;
+	background-color: darkseagreen;
 }
 
 #homeAdminText {
@@ -239,8 +239,8 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: darkblue;
-	background-color: orangered;
+	color: indianred;
+	background-color: darkseagreen;
 	opacity: 0.90;
 	border-radius: 5%;
 	padding: 2% 0% 2% 0%;
@@ -251,7 +251,7 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
 	padding: 1%;
 	font-size: larger;
 	font-weight: lighter;
-	background-color: darkblue;
+	background-color: indianred;
 	border-radius: 10%;
 }
 
@@ -260,7 +260,7 @@ h1.intestazione, h4.intestazione, h3.intestazione, h2.intestazione{
 	padding: 1%;
 	font-size: larger;
 	font-weight: lighter;
-	background-color: darkred;
+	background-color: indianred;
 	border-radius: 10%;
 }
 
@@ -270,7 +270,7 @@ a.buttonEliminaCB{
 	padding: 1%;
 	font-size: larger;
 	font-weight: lighter;
-	background-color: darkred;
+	background-color: indianred;
 	border-radius: 10%;
 }
 
@@ -298,21 +298,21 @@ div.lista{
 
 
 .immagine {
-  border: 5px solid darkred;
+  border: 5px solid indianred;
   display: block;
   width: 150%;
   height: auto;
 }
 
 .immagineBuffets {
-  border: 5px solid darkred;
+  border: 5px solid indianred;
   display: block;
   width: 160%;
   height: auto;
 }
 
 .immagineChefs {
-  border: 5px solid darkred;
+  border: 5px solid indianred;
   display: block;
   width: 160%;
   height: auto;
@@ -329,7 +329,7 @@ div.lista{
   width: 160%;
   opacity: 0;
   transition: .5s ease;
-  background-color: darkred;
+  background-color: indianred;
 }
 
 .sovrapposizioneChefs {
@@ -342,7 +342,7 @@ div.lista{
   width: 160%;
   opacity: 0;
   transition: .5s ease;
-  background-color: darkred;
+  background-color: indianred;
 }
 
 .contenitore:hover .sovrapposizione {
@@ -370,8 +370,8 @@ div.lista{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	color: darkred;
-	background-color: goldenrod;
+	color: indianred;
+	background-color: darkseagreen;
 	opacity: 0.90;
 	border-radius: 5%;
 	padding: 5% 5%;
@@ -396,12 +396,12 @@ div.lista{
 	padding: 1%;
 	font-size: large;
 	font-weight: lighter;
-	background-color:darkred;
+	background-color:indianred;
 	border-radius: 10%;
 }
 
 .fotoChef{
-	border: 5px solid darkred;
+	border: 5px solid indianred;
   	display: block;
   	width: 40%;
   	height: auto;

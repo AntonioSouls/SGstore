@@ -13,7 +13,7 @@ public class Scarpa {
 	private String nome;
 	private String descrizione;
 	private String colore;
-	private String taglia;
+	private Long taglia;
 	
 	@ManyToOne
 	private Brand brand;
@@ -53,10 +53,10 @@ public class Scarpa {
 	}
 	
 	
-	public String getTaglia() {
+	public Long getTaglia() {
 		return taglia;
 	}
-	public void setTaglia(String taglia) {
+	public void setTaglia(Long taglia) {
 		this.taglia = taglia;
 	}
 	

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Elenco Scarpe| SG-store</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">	
+	    <link rel="stylesheet" th:href="@{/css/css-general.css}">
+	</head>
+	
+	<body>
+		<header th:replace="fragments/intestazione-general.html :: intestazione"></header>
+		<div th:replace="fragments/intestazione-general.html :: sfondo3"></div>
+		<div id="corpo" th:if="${brand != null}">
+			<h1>Scarpe del brand <span th:text="${brand.nome}"></span></h1>
+			<div class="lista">
+					<li th:each = "scarpa: ${scarpe}">
+						<div class="contenitore">
+							<img th:attr="src=@{'/images/' + ${scarpa.nome} + '.jpg'},title=${scarpa.nome},alt=${scarpa.nome}" class="immagineBuffets">
+							<a class="sovrapposizione" th:href="@{'/scarpa' + '/' + ${scarpa.id}}" th:text="${scarpa.nome}">NomeScarpa</a>
+						</div>
+					</li>
+			</div>
+		</div>
+		<div id="corpo" th:if="${brand == null}">
+			<h1 class="intestazione">Our Shoes</h1>
+			<h4 class="intestazione">Ti presentiamo una lista di scarpe disponibili</h4>
+			<div class="lista">
+					<li th:each = "scarpa: ${scarpe}">
+						<div class="contenitore">
+							<img th:attr="src=@{'/images/' + ${scarpa.nome} + '.jpg'},title=${scarpa.nome},alt=${scarpa.nome}" class="immagineBuffets">
+							<a class="sovrapposizione" th:href="@{'/scarpa' + '/' + ${scarpa.id}}" th:text="${scarpa.nome}">NomeScarpa</a>
+						</div>
+					</li>
+			</div>
+		</div>
+	</body>
+	
+</html>

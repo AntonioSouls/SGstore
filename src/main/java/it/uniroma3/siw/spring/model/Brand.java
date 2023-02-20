@@ -17,7 +17,7 @@ public class Brand {
 	@Column(nullable = false)
 	private String descrizione;
 	
-	@OneToMany(mappedBy = "brand")
+	@OneToMany(mappedBy = "brand", cascade = {CascadeType.REMOVE})
 	private List<Scarpa> listaScarpe;
 	
 	

@@ -39,6 +39,11 @@ public class AuthenticationController {
 		return "loginForm.html";
 	}
 	
+	@PostMapping
+	public String Login(Model model) {
+		return "redirect:/home";
+	}
+	
 	@GetMapping("/logout") 
 	public String logout(Model model) {
 		return "index.html";

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="ISO-8859-1" />
+	<title>Add scarpa | SG-store</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">	
+    	<link rel="stylesheet" th:href="@{/css/css-general.css}">	
+</head>
+
+<body>
+	<header th:replace="fragments/intestazione-general.html :: intestazione"></header>
+	<div th:replace="fragments/intestazione-general.html :: sfondo2"></div>
+	<div id="text">
+		<h1 class="title">Aggiungi una scarpa</h1>
+		<form th:action="@{/addScarpa}" method="POST" th:object="${scarpa}">
+			<table>
+				<div th:if="${#fields.hasGlobalErrors()}" role="alert">
+					<h4 align="center" th:each="err : ${#fields.globalErrors()}" th:text="'Errore: ' + ${err}">...</h4>
+				</div>
+				<tr class="button">
+					<th> Nome Scarpa</th>
+					<td>
+						<input type="text" placeholder="Nome Scarpa" th:field="*{nome}">
+					</td>
+					<td th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}" th:style="'color:darkred'"></td>
+				</tr>
+				<tr class="button">
+					<th> Descrizione Scarpa</th>
+					<td>
+						<input type="text" placeholder="Descrizione Scarpa" th:field="*{descrizione}">
+					</td>
+					<td th:if="${#fields.hasErrors('descrizione')}" th:errors="*{descrizione}" th:style="'color:darkred'"></td>
+				</tr>
+				<tr class="button">
+					<th> Colore Scarpa</th>
+					<td>
+						<input type="text" placeholder="Colore Scarpa" th:field="*{colore}">
+					</td>
+					<td th:if="${#fields.hasErrors('colore')}" th:errors="*{colore}" th:style="'color:darkred'"></td>
+				</tr>
+				<tr class="button">
+					<th> Taglia Scarpa</th>
+					<td>
+						<input type="text" placeholder="Taglia Scarpa" th:field="*{taglia}">
+					</td>
+					<td th:if="${#fields.hasErrors('taglia')}" th:errors="*{taglia}" th:style="'color:darkred'"></td>
+				</tr>
+				<tr class="button">
+					<th> Nome Brand</th>
+					<td>
+						<input type="text" placeholder="Nome Brand" th:field="*{brand.nome}">
+					</td>
+					<td th:if="${#fields.hasErrors('brand.nome')}" th:errors="*{brand.nome}" th:style="'color:darkred'"></td>
+				</tr>
+				<tr class="button" id="buttons">
+            				<td>
+                					<button type="submit">Aggiungi Scarpa</button>
+            				</td>
+        				</tr>
+			</table>
+		</form>
+	</div>
+</body>
